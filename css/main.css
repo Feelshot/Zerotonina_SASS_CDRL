@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;700;900&display=swap");
+main .galeria {
+  width: 100%;
+  height: 350px; }
+  main .galeria .carousel {
+    background-color: var(--Gris-medio); }
+    main .galeria .carousel .carousel-inner .carousel-item .imagenChica {
+      width: 350px;
+      height: 350px; }
+    main .galeria .carousel .carousel-inner .carousel-item .imagenGrande {
+      width: auto;
+      height: 350px; }
+
 :root {
   /*Primary*/
   --Gris-fuerte: hsl(60, 4%, 11%);
@@ -32,6 +44,11 @@ p {
 a, button {
   font-family: 'Anton', sans-serif;
   font-size: 15px; }
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin-top: 10px; }
 
 header {
   background-color: var(--Gris-fuerte);
