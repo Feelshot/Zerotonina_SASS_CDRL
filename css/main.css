@@ -33,4 +33,160 @@ a, button {
   font-family: 'Anton', sans-serif;
   font-size: 15px; }
 
-/* header */
+header {
+  background-color: var(--Gris-fuerte);
+  display: flex;
+  justify-content: space-around; }
+  header div a .logo {
+    width: 150px;
+    height: auto;
+    margin-top: 10px; }
+  header ul {
+    display: flex;
+    list-style: none; }
+    header ul li a {
+      text-decoration: none;
+      margin-left: 40px;
+      color: var(--Gris-claro);
+      width: 100px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+main section div .imgBig {
+  width: 350px;
+  border-radius: 20px; }
+
+main .blockTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px; }
+  main .blockTop .blockTopText {
+    width: 50%;
+    margin-right: 15%; }
+    main .blockTop .blockTopText h1 {
+      margin: 20px 0px 0px 0px; }
+    main .blockTop .blockTopText p {
+      margin: 30px 0px 30px 0px;
+      font-size: 22px; }
+    main .blockTop .blockTopText button {
+      width: 240px;
+      height: 60px;
+      background-color: var(--Call-to-action);
+      border-radius: 15px; }
+      main .blockTop .blockTopText button h2 {
+        color: var(--Gris-claro);
+        font-size: 30px; }
+    main .blockTop .blockTopText button:hover {
+      width: 250px;
+      height: 70px;
+      border-radius: 20px;
+      transition: 0.3s;
+      cursor: pointer; }
+
+main .blockTips {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 30px; }
+  main .blockTips .icons {
+    width: 80px;
+    margin: 20px 0px 20px 0px; }
+  main .blockTips div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .blockTips div h3 {
+      text-align: center;
+      font-size: 28px;
+      margin: 10px 0 10px 0; }
+    main .blockTips div p {
+      width: 150px;
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 60px; }
+
+main .blockImg {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px; }
+  main .blockImg div {
+    width: 600px; }
+    main .blockImg div h2 {
+      font-size: 42px;
+      margin: 0px 0 30px 0; }
+    main .blockImg div p {
+      font-size: 26px; }
+
+main .blockForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 60px; }
+  main .blockForm div {
+    width: 600px; }
+  main .blockForm h2 {
+    font-size: 42px;
+    margin: 0px 0 30px 0; }
+  main .blockForm p {
+    font-size: 26px; }
+  main .blockForm .formularioBottom ul li {
+    list-style: none;
+    margin-top: 20px;
+    font-family: 'Anton', sans-serif;
+    font-size: 24px; }
+    main .blockForm .formularioBottom ul li button {
+      width: 240px;
+      height: 60px;
+      margin-top: 30px;
+      background-color: var(--Call-to-action);
+      border-radius: 15px;
+      font-size: 30px;
+      color: var(--Gris-claro); }
+    main .blockForm .formularioBottom ul li button:hover {
+      width: 250px;
+      height: 70px;
+      border-radius: 20px;
+      transition: 0.3s;
+      cursor: pointer; }
+  main .blockForm .formularioBottom input {
+    width: 200px;
+    height: 30px; }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--Gris-fuerte);
+  padding: 30px 0 40px 0; }
+  footer .blockLeft {
+    display: flex;
+    align-items: center; }
+    footer .blockLeft a {
+      margin-right: 25px; }
+    footer .blockLeft ul li {
+      list-style: none;
+      display: flex;
+      margin-top: 25px; }
+      footer .blockLeft ul li i {
+        margin-right: 15px; }
+      footer .blockLeft ul li p {
+        width: 140px; }
+    footer .blockLeft h4 {
+      margin-right: 15px; }
+  footer .blockCenter ul {
+    list-style: none; }
+    footer .blockCenter ul li {
+      margin-top: 10px; }
+      footer .blockCenter ul li a {
+        color: var(--Gris-claro);
+        text-decoration: none; }
+  footer .blockRight {
+    display: flex;
+    align-items: center; }
+    footer .blockRight a {
+      color: var(--Gris-claro);
+      margin-left: 20px; }
