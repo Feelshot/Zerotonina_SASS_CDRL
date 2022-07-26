@@ -1,3 +1,21 @@
-h1 {
-    color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;700;900&display=swap');
+:root {
+/*Primary*/
+--Gris-fuerte: hsl(60, 4%, 11%);
+--Gris-medio: hsla(60, 4%, 11%, 0.906);
+--Gris-claro: hsl(0, 0%, 90%);
+--Call-to-action: hsl(215, 86%, 58%);
+/*
+font-family: 'Anton', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
 }
+// ajustes generales
+*{margin: 0; padding: 0;}
+body {background-color: var(--Gris-medio);color: var(--Gris-claro);}
+h1 {font-family: 'Roboto', sans-serif; font-size: 60px;}
+h2, h3, h4 {font-family: 'Roboto', sans-serif;}
+p { font-family: 'Roboto', sans-serif; font-size: 16px;}
+a, button {font-family: 'Anton', sans-serif;font-size: 15px;}
+
+/* header */
