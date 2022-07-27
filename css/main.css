@@ -11,13 +11,19 @@ main .galeria {
       width: auto;
       height: 350px; }
 
+/*
+--Gris-fuerte: hsl(60, 4%, 11%);
+--Gris-medio: hsla(60, 4%, 11%, 0.906);
+--Gris-claro: hsl(0, 0%, 90%);
+--Call-to-action: hsl(215, 86%, 58%);
+*/
 :root {
-  /*Primary*/
-  --Gris-fuerte: hsl(60, 4%, 11%);
-  --Gris-medio: hsla(60, 4%, 11%, 0.906);
-  --Gris-claro: hsl(0, 0%, 90%);
-  --Call-to-action: hsl(215, 86%, 58%);
-  /*
+  /*Primary
+--Gris-fuerte: hsl(60, 4%, 11%);
+--Gris-medio: hsla(60, 4%, 11%, 0.906);
+--Gris-claro: hsl(0, 0%, 90%);
+--Call-to-action: hsl(215, 86%, 58%);
+
 font-family: 'Anton', sans-serif;
 font-family: 'Roboto', sans-serif;
 */ }
@@ -71,15 +77,14 @@ header {
       justify-content: center;
       align-items: center; }
 
-main section div .imgBig {
-  width: 350px;
-  border-radius: 20px; }
-
 main .blockTop {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 60px; }
+  main .blockTop .imgBig {
+    width: 350px;
+    border-radius: 20px; }
   main .blockTop .blockTopText {
     width: 50%;
     margin-right: 15%; }
@@ -131,6 +136,9 @@ main .blockImg {
   align-items: center;
   justify-content: space-around;
   margin-bottom: 50px; }
+  main .blockImg .imagenRefuerzo {
+    width: 350px;
+    border-radius: 20px; }
   main .blockImg div {
     width: 600px; }
     main .blockImg div h2 {
@@ -207,3 +215,147 @@ footer {
     footer .blockRight a {
       color: var(--Gris-claro);
       margin-left: 20px; }
+
+/* =-=-=-=- MEDIA QUERIES =-=-=-=- */
+/* ==== TABLET ==== */
+@media (min-width: 401px) and (max-width: 780px) {
+  header div a .logo {
+    width: 120px; }
+  header ul li a {
+    margin-left: 15px;
+    width: 70px;
+    height: 50px;
+    text-align: center; }
+  main div .imgBig {
+    width: 250px;
+    border-radius: 20px; }
+  main .blockTop {
+    margin: 20px 30px 0 30px; }
+    main .blockTop .blockTopText {
+      width: 50%;
+      margin-right: 15%; }
+      main .blockTop .blockTopText h1 {
+        margin: 10px 0px 0px 0px; }
+      main .blockTop .blockTopText p {
+        font-size: 20px; }
+  main .blockTips {
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px; }
+    main .blockTips .icons {
+      width: 80px;
+      margin: 20px 0px 20px 0px; }
+    main .blockTips div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .blockTips div h3 {
+        text-align: center;
+        font-size: 28px;
+        margin: 10px 0 10px 0; }
+      main .blockTips div p {
+        width: 150px;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 60px; }
+  main .blockImg {
+    margin: 20px 30px 30px 30px; }
+    main .blockImg .imagenRefuerzo {
+      margin: 0 30px 0 0px;
+      width: 300px; }
+    main .blockImg div p {
+      font-size: 24px; }
+  main .blockForm div {
+    width: 500px;
+    margin: 0 20px 0 20px; }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 40px 0; }
+    footer .blockLeft {
+      flex-direction: column; }
+      footer .blockLeft a {
+        margin-bottom: 20px; }
+      footer .blockLeft ul li p {
+        width: 200px; }
+    footer .blockCenter ul {
+      list-style: none;
+      margin: 25px 0 25px 0;
+      text-align: center; } }
+
+/* ==== MOBILE ==== */
+@media (min-width: 100px) and (max-width: 400px) {
+  header ul li a {
+    margin-left: 0px;
+    width: 50px;
+    font-size: 10px; }
+  main div .imgBig {
+    width: 250px;
+    border-radius: 20px; }
+  main .blockTop {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 20px 0 0 0; }
+    main .blockTop .blockTopText {
+      width: 100%;
+      margin-right: 0; }
+      main .blockTop .blockTopText h1 {
+        margin: 10px 0px 0px 0px;
+        font-size: 40px; }
+      main .blockTop .blockTopText p {
+        font-size: 20px;
+        margin: 20px; }
+  main .blockTips {
+    flex-direction: column; }
+    main .blockTips .icons {
+      margin: 10px 0px 10px 0px; }
+    main .blockTips div p {
+      margin-bottom: 30px; }
+  main .blockImg {
+    flex-direction: column-reverse; }
+    main .blockImg .imagenRefuerzo {
+      margin: 0;
+      width: 300px; }
+    main .blockImg div {
+      width: 300px;
+      margin-top: 20px;
+      text-align: center; }
+      main .blockImg div h2 {
+        font-size: 32px;
+        margin: 0px 0 30px 0; }
+      main .blockImg div p {
+        font-size: 20px; }
+  main .blockForm {
+    margin-bottom: 60px;
+    flex-direction: column;
+    text-align: center; }
+    main .blockForm div {
+      width: 300px;
+      margin-bottom: 30px; }
+    main .blockForm h2 {
+      font-size: 40px;
+      margin-bottom: 30px; }
+    main .blockForm p {
+      font-size: 20px; }
+    main .blockForm .formularioBottom ul li {
+      font-size: 20px; }
+      main .blockForm .formularioBottom ul li button {
+        width: 220px;
+        margin-top: 20px;
+        border-radius: 25px; }
+    main .blockForm .formularioBottom input {
+      width: 160px; }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 40px 0; }
+    footer .blockLeft {
+      flex-direction: column; }
+      footer .blockLeft a {
+        margin-bottom: 20px; }
+      footer .blockLeft ul li p {
+        width: 200px; }
+    footer .blockCenter ul {
+      list-style: none;
+      margin: 25px 0 25px 0;
+      text-align: center; } }
