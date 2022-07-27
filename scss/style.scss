@@ -39,13 +39,13 @@ header {
     }
 
 }
-// ------ MAIN ----------------
 
+// ------ MAIN ----------------
 // ----------------------------------------------- INDEX -------------------------------------
 
 // Seccion inicial con call to action -
 main {
-    background-color: $gris-claro;
+    background-color: $gris-medio;
     .blockTop {
         display: flex;
         align-items: center;
@@ -236,20 +236,22 @@ main {
 
 // ----------------------------------------------- GALERIA -------------------------------------
 main {
+    background-color: $gris-medio;
     .galeria {
-        width: 100%;
-        height: 350px;
+        width: 650px;
+        height: 650px;
+        margin: 0 auto 0 auto;
         .carousel {
             background-color: var(--Gris-medio);
             .carousel-inner {
                 .carousel-item {
                         .imagenChica {
-                            width: 350px;
-                            height: 350px;
+                            width: auto;
+                            height: 650px;
                         }
                         .imagenGrande {
                             width: auto;
-                            height: 350px;
+                            height: 650px;
                         }
                 }
             }
@@ -384,10 +386,13 @@ footer {
     }
 }
 
+
+
 /* =-=-=-=- MEDIA QUERIES =-=-=-=- */
 
 /* ==== TABLET ==== */
 @media (min-width: 649px) and (max-width: 900px) {
+
     // HEADER --------------------
     header {
         div {
@@ -408,9 +413,11 @@ footer {
             }
         }
     }
+
     // MAIN -----------------
 // ----------------------------------------------- INDEX -------------------------------------
     main {
+        background-color: $gris-medio;
         div {
             .imgBig {
                 width: 250px;
@@ -481,19 +488,82 @@ footer {
             }
         }
     }
+
 // ----------------------------------------------- CONTACTO -------------------------------------
+    .mainContacto {
+        .sectionContacto {
+            h1 {
+                font-size: 38px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 24px;
+            }
+        }
+    }
 
 // ----------------------------------------------- GALERIA -------------------------------------
+    main {
+        background-color: $gris-medio;
+        .galeria {
+            height: 550px;
+            width: 550px;
+            margin: 0 auto 0 auto;
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .imagenChica {
+                            height: 550px;
+                        }
+                        .imagenGrande {
+                            height: 550px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 // ----------------------------------------------- PORTAFOLIO -------------------------------------
+    main {
+        .video {
+            height: 420px;
+        }
+        .sectionPortafolio {
+            .texto {
+                width: 50%;
+                margin: 0 20px 0 40px;
+                h1 {
+                    margin-bottom: 20px;
+                    font-size: 60px;
+                }
+                p {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
 
 // ----------------------------------------------- QUIENES SOMOS -------------------------------------
-
-
-
+    main {
+        .sectionQuienes {
+            margin: 20px;
+            img {
+                margin: 30px 30px 0px 0px;
+            }
+            h2 {
+                font-size: 50px;
+                text-align: center;
+            }
+            p {
+                font-size: 26px;
+                text-align: center;
+            }
+        }
+    }
 
     // FOOTER -----------------------
-
     footer {
         flex-direction: column;
         align-items: center;
@@ -535,6 +605,7 @@ footer {
             }
         }
     }
+
     // MAIN ----------------
 // ----------------------------------------------- INDEX -------------------------------------
     main {
@@ -628,14 +699,101 @@ footer {
     }
 
 // ----------------------------------------------- CONTACTO -------------------------------------
+    .mainContacto {
+        flex-direction: column;
+        margin: 40px;
+        .sectionContacto {
+            width: 100%;
+            text-align: center;
+            h1 {
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+        .formularioBottomContacto {
+            margin: 0 auto 30px auto;
+            text-align: center;
+        }
+    }
 
 // ----------------------------------------------- GALERIA -------------------------------------
+    main {
+        background-color: $gris-medio;
+        .galeria {
+            width: 550px;
+            height: 550px;
+            margin: 0 auto 0 auto;
+            .carousel {
+                .carousel-inner { 
+                    .carousel-item {
+                        .imagenChica {
+                            width: auto;
+                            height: 550px;
+                            place-self: center;
+                        }
+                        .imagenGrande {
+                            width: auto;
+                            height: 550px;
+                            place-self: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 // ----------------------------------------------- PORTAFOLIO -------------------------------------
+    main {
+        .video {
+            width: 90%;
+            height: 220px;
+            margin: 20px auto 60px auto;
+        }
+        .sectionPortafolio {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .texto {
+                width: 100%;
+                margin: 0px;
+                h1 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+            .formularioBottomPortafolio {
+                width: 60%;
+                margin: 0 auto 20px auto;
+            }
+        }
+    }
 
 // ----------------------------------------------- QUIENES SOMOS -------------------------------------
-
-
+    main {
+        .sectionQuienes {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            img {
+                width: 350px;
+                height: auto;
+                margin: 0 0 30px 0;
+            }
+            div {
+                h2 {
+                    font-size: 60px;
+                }
+                p {
+                    font-size: 30px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
 
     // FOOTER ----------------
     footer {

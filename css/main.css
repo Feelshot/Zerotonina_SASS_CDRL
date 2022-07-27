@@ -55,7 +55,7 @@ header {
         align-items: center; }
 
 main {
-  background-color: #e6e6e6; }
+  background-color: rgba(29, 29, 27, 0.906); }
   main .blockTop {
     display: flex;
     align-items: center;
@@ -188,17 +188,20 @@ main {
       width: 200px;
       height: 30px; }
 
-main .galeria {
-  width: 100%;
-  height: 350px; }
-  main .galeria .carousel {
-    background-color: var(--Gris-medio); }
-    main .galeria .carousel .carousel-inner .carousel-item .imagenChica {
-      width: 350px;
-      height: 350px; }
-    main .galeria .carousel .carousel-inner .carousel-item .imagenGrande {
-      width: auto;
-      height: 350px; }
+main {
+  background-color: rgba(29, 29, 27, 0.906); }
+  main .galeria {
+    width: 650px;
+    height: 650px;
+    margin: 0 auto 0 auto; }
+    main .galeria .carousel {
+      background-color: var(--Gris-medio); }
+      main .galeria .carousel .carousel-inner .carousel-item .imagenChica {
+        width: auto;
+        height: 650px; }
+      main .galeria .carousel .carousel-inner .carousel-item .imagenGrande {
+        width: auto;
+        height: 650px; }
 
 main .video {
   width: 90%;
@@ -297,48 +300,86 @@ footer {
     width: 70px;
     height: 50px;
     text-align: center; }
-  main div .imgBig {
-    width: 250px;
-    border-radius: 20px; }
-  main .blockTop {
-    margin: 0px 30px 0 30px; }
-    main .blockTop .blockTopText {
-      width: 50%;
-      margin-right: 15%; }
-      main .blockTop .blockTopText h1 {
-        margin: 10px 0px 0px 0px; }
-      main .blockTop .blockTopText p {
-        font-size: 20px; }
-  main .blockTips {
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 30px; }
-    main .blockTips .icons {
-      width: 80px;
-      margin: 20px 0px 20px 0px; }
-    main .blockTips div {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      main .blockTips div h3 {
-        text-align: center;
-        font-size: 28px;
-        margin: 10px 0 10px 0; }
-      main .blockTips div p {
-        width: 150px;
-        text-align: center;
-        font-size: 20px;
-        margin-bottom: 60px; }
-  main .blockImg {
-    margin: 20px 30px 30px 30px; }
-    main .blockImg .imagenRefuerzo {
-      margin: 0 30px 0 0px;
-      width: 300px; }
-    main .blockImg div p {
-      font-size: 24px; }
-  main .blockForm div {
-    width: 500px;
-    margin: 0 20px 0 20px; }
+  main {
+    background-color: rgba(29, 29, 27, 0.906); }
+    main div .imgBig {
+      width: 250px;
+      border-radius: 20px; }
+    main .blockTop {
+      margin: 0px 30px 0 30px; }
+      main .blockTop .blockTopText {
+        width: 50%;
+        margin-right: 15%; }
+        main .blockTop .blockTopText h1 {
+          margin: 10px 0px 0px 0px; }
+        main .blockTop .blockTopText p {
+          font-size: 20px; }
+    main .blockTips {
+      align-items: center;
+      justify-content: space-around;
+      padding-top: 30px; }
+      main .blockTips .icons {
+        width: 80px;
+        margin: 20px 0px 20px 0px; }
+      main .blockTips div {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        main .blockTips div h3 {
+          text-align: center;
+          font-size: 28px;
+          margin: 10px 0 10px 0; }
+        main .blockTips div p {
+          width: 150px;
+          text-align: center;
+          font-size: 20px;
+          margin-bottom: 60px; }
+    main .blockImg {
+      margin: 20px 30px 30px 30px; }
+      main .blockImg .imagenRefuerzo {
+        margin: 0 30px 0 0px;
+        width: 300px; }
+      main .blockImg div p {
+        font-size: 24px; }
+    main .blockForm div {
+      width: 500px;
+      margin: 0 20px 0 20px; }
+  .mainContacto .sectionContacto h1 {
+    font-size: 38px;
+    margin-bottom: 20px; }
+  .mainContacto .sectionContacto p {
+    font-size: 24px; }
+  main {
+    background-color: rgba(29, 29, 27, 0.906); }
+    main .galeria {
+      height: 550px;
+      width: 550px;
+      margin: 0 auto 0 auto; }
+      main .galeria .carousel .carousel-inner .carousel-item .imagenChica {
+        height: 550px; }
+      main .galeria .carousel .carousel-inner .carousel-item .imagenGrande {
+        height: 550px; }
+  main .video {
+    height: 420px; }
+  main .sectionPortafolio .texto {
+    width: 50%;
+    margin: 0 20px 0 40px; }
+    main .sectionPortafolio .texto h1 {
+      margin-bottom: 20px;
+      font-size: 60px; }
+    main .sectionPortafolio .texto p {
+      font-size: 24px;
+      margin-bottom: 20px; }
+  main .sectionQuienes {
+    margin: 20px; }
+    main .sectionQuienes img {
+      margin: 30px 30px 0px 0px; }
+    main .sectionQuienes h2 {
+      font-size: 50px;
+      text-align: center; }
+    main .sectionQuienes p {
+      font-size: 26px;
+      text-align: center; }
   footer {
     flex-direction: column;
     align-items: center;
@@ -416,6 +457,64 @@ footer {
         border-radius: 25px; }
     main .blockForm .formularioBottom input {
       width: 160px; }
+  .mainContacto {
+    flex-direction: column;
+    margin: 40px; }
+    .mainContacto .sectionContacto {
+      width: 100%;
+      text-align: center; }
+      .mainContacto .sectionContacto h1 {
+        margin-bottom: 30px; }
+      .mainContacto .sectionContacto p {
+        font-size: 20px; }
+    .mainContacto .formularioBottomContacto {
+      margin: 0 auto 30px auto;
+      text-align: center; }
+  main {
+    background-color: rgba(29, 29, 27, 0.906); }
+    main .galeria {
+      width: 550px;
+      height: 550px;
+      margin: 0 auto 0 auto; }
+      main .galeria .carousel .carousel-inner .carousel-item .imagenChica {
+        width: auto;
+        height: 550px;
+        place-self: center; }
+      main .galeria .carousel .carousel-inner .carousel-item .imagenGrande {
+        width: auto;
+        height: 550px;
+        place-self: center; }
+  main .video {
+    width: 90%;
+    height: 220px;
+    margin: 20px auto 60px auto; }
+  main .sectionPortafolio {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    main .sectionPortafolio .texto {
+      width: 100%;
+      margin: 0px; }
+      main .sectionPortafolio .texto h1 {
+        font-size: 30px; }
+      main .sectionPortafolio .texto p {
+        font-size: 20px; }
+    main .sectionPortafolio .formularioBottomPortafolio {
+      width: 60%;
+      margin: 0 auto 20px auto; }
+  main .sectionQuienes {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    main .sectionQuienes img {
+      width: 350px;
+      height: auto;
+      margin: 0 0 30px 0; }
+    main .sectionQuienes div h2 {
+      font-size: 60px; }
+    main .sectionQuienes div p {
+      font-size: 30px;
+      margin-top: 30px; }
   footer {
     flex-direction: column;
     align-items: center;
