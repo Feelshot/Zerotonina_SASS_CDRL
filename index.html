@@ -11,19 +11,46 @@
 </head>
 <body>
     <!--Header y Nav-->
-    <header>
-        <div>
-            <a href="index.html"><img src="img/logo_black.jpeg" alt="logotipo" class="logo"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="pages/quienes.html">Quienes somos</a></li>
-                <li><a href="pages/galeria.html">Galeria</a></li>
-                <li><a href="pages/portafolio.html">Portafolio</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                      <img src="img/logo_black.jpeg" alt="" width="150" height="50" class="d-inline-block align-text-top"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!--
+                    EL CODIGO DE BOOSTRAP NO ME PERMITE CAMBIAR EL COLOR DE LOS LINKS, NO SE COMO HACERLO, PROBE DE TODO.
+
+                    TAMPOCO ME FUNCIONA EL BOTON HAMBURGUESA EN VERSION MOBILE.
+                    DESDE LA WEB DE BOOSTRAP SE PUEDE ABRIR Y CERRAR, PERO AL PEGAR EL CODIGO EN MI DOCUMENTO, YA NO FUNCIONA.
+
+                    HAGO LA ENTREGA ASÍ PARA VER SI ME PUEDEN AYUDAR A VISUALIZAR EL ERROR.
+                    GRACIAS
+                -->
+
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/quienes.html">Quienes somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/portafolio.html">Portafolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <!--Contenido general-->
     <main>

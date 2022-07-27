@@ -1,73 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;700;900&display=swap');
-@import "utilities/contacto", "utilities/galeria", "utilities/portafolio", "utilities/variables";
-:root {
-/*Primary
---Gris-fuerte: hsl(60, 4%, 11%);
---Gris-medio: hsla(60, 4%, 11%, 0.906);
---Gris-claro: hsl(0, 0%, 90%);
---Call-to-action: hsl(215, 86%, 58%);
+@import "utilities/variables";
 
-font-family: 'Anton', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
-}
 // ajustes generales
 *{margin: 0; padding: 0;}
-body {background-color: var(--Gris-medio);color: var(--Gris-claro);}
+body {background-color: $gris-medio;color: $gris-claro; background: $gris-claro;}
 h1 {font-family: 'Roboto', sans-serif; font-size: 60px;}
 h2, h3, h4 {font-family: 'Roboto', sans-serif;}
 p { font-family: 'Roboto', sans-serif; font-size: 16px;}
 a, button {font-family: 'Anton', sans-serif;font-size: 15px;}
-.logo {
-    width: 150px;
-    height: auto;
-    margin-top: 10px;
-}
+.logo { width: 150px; height: auto; margin-top: 10px;}
 
-// header
+// ----- HEADER -------------
 header {
-    background-color: var(--Gris-fuerte);
+    background-color: $gris-fuerte;
     display: flex;
     justify-content: space-around;
-    div {
-        a {
-            .logo {
-                width: 150px;
-                height: auto;
-                margin-top: 10px;
-            }
-        }
-    }
-    ul {
-        display: flex;
-        list-style: none;
-        li {
-            a {
-                text-decoration: none;
-                margin-left: 40px;
-                color: var(--Gris-claro);
-                width: 100px;
-                height: 60px;
+    nav {
+        div {
+            ul {
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                list-style: none;
+                color: $gris-claro;
+                li {
+                    color: $gris-claro;
+                    a {
+                        text-decoration: none;
+                        margin-left: 40px;
+                        color: $gris-claro;
+                        width: 100px;
+                        height: 60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
             }
         }
     }
+
 }
-// main
+// ------ MAIN ----------------
 
+// ----------------------------------------------- INDEX -------------------------------------
 
-        
-    
-
-// Seccion inicial con call to action --- INDEX
+// Seccion inicial con call to action -
 main {
+    background-color: $gris-claro;
     .blockTop {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 60px;
+        padding-top: 60px;
         .imgBig {
             width: 350px;
             border-radius: 20px;
@@ -85,10 +68,10 @@ main {
             button {
                 width: 240px;
                 height: 60px;
-                background-color: var(--Call-to-action);
+                background-color: $call-to-action;
                 border-radius: 15px;
                 h2 {
-                    color: var(--Gris-claro);
+                    color: $gris-claro;
                     font-size: 30px;
                 }
             }
@@ -164,7 +147,7 @@ main {
             display: flex;
             align-items: center;
             justify-content: space-around;
-            margin-bottom: 60px;
+            padding-bottom: 60px;
 
             div {
                 width: 600px;
@@ -189,10 +172,10 @@ main {
                             width: 240px;
                             height: 60px;
                             margin-top: 30px;
-                            background-color: var(--Call-to-action);
+                            background-color: $call-to-action;
                             border-radius: 15px;
                             font-size: 30px;
-                            color: var(--Gris-claro); 
+                            color: $gris-claro; 
                         }
 
                         // animacion boton
@@ -213,10 +196,140 @@ main {
             }
     }
 }
+
+// ----------------------------------------------- CONTACTO -------------------------------------
+.mainContacto {
+    display: flex;
+    margin: 60px;
+    .sectionContacto {
+        width: 50%;
+        h1 {    margin-bottom: 30px;}
+        p {    font-size: 30px;}
+    }
+    .formularioBottomContacto {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        ul {
+            li {
+                list-style: none;
+                margin-top: 20px;
+                font-family: 'Anton', sans-serif;
+                font-size: 24px;
+                button {
+                    width: 240px;
+                    height: 60px;
+                    margin-top: 30px;
+                    background-color: $call-to-action;
+                    border-radius: 15px;
+                    font-size: 30px;
+                    color: $gris-claro; 
+                }
+            }
+        }
+        input {
+            width: 200px;
+            height: 30px;
+        }
+    }
+}
+
+// ----------------------------------------------- GALERIA -------------------------------------
+main {
+    .galeria {
+        width: 100%;
+        height: 350px;
+        .carousel {
+            background-color: var(--Gris-medio);
+            .carousel-inner {
+                .carousel-item {
+                        .imagenChica {
+                            width: 350px;
+                            height: 350px;
+                        }
+                        .imagenGrande {
+                            width: auto;
+                            height: 350px;
+                        }
+                }
+            }
+
+        }
+    }
+}
+
+// ----------------------------------------------- PORTAFOLIO -------------------------------------
+main {
+    .video {
+        width: 90%;
+        height: 800px;
+        display: flex;
+        margin: 60px auto 60px auto;
+    }
+    .sectionPortafolio {
+        display: flex;
+        .texto {
+            width: 50%;
+            margin-left: 80px;
+            p {
+                font-size: 30px;
+            }
+        }
+    }
+    .formularioBottomPortafolio {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+        ul {
+            li {
+                list-style: none;
+                margin-top: 20px;
+                font-family: 'Anton', sans-serif;
+                font-size: 24px;
+                button {
+                    width: 240px;
+                    height: 60px;
+                    margin-top: 30px;
+                    background-color: $call-to-action;
+                    border-radius: 15px;
+                    font-size: 30px;
+                    color: $gris-claro; 
+                }
+            }
+        }
+        input {
+            width: 200px;
+            height: 30px;
+        }
+    }
+}
+
+// ----------------------------------------------- QUIENES SOMOS -------------------------------------
+main {
+    .sectionQuienes {
+        display: flex;
+        align-items: center;
+        img {
+            width: 350px;
+            height: auto;
+            margin: 30px 80px 30px 30px;
+        }
+        h2 {
+            font-size: 60px;
+        }
+        p {
+            font-size: 30px;
+            margin-top: 30px;
+        }
+    }
+}
+
+// FOOTER ---------------------
 footer {
     display: flex;
     justify-content: space-around;
-    background-color: var(--Gris-fuerte);
+    background-color: $gris-fuerte;
     padding: 30px 0 40px 0;
     
     // BLOQUE IZQUIERDA
@@ -227,6 +340,7 @@ footer {
             margin-right: 25px;
         }
         ul {
+            color: $gris-claro;
             li {
                 list-style: none;
                 display: flex;
@@ -248,10 +362,12 @@ footer {
     .blockCenter {
         ul {
             list-style: none;
+            text-align: center;
+            padding: 0;
             li {
                 margin-top: 10px;
                 a {
-                    color: var(--Gris-claro);
+                    color: $gris-claro;
                     text-decoration: none;
                 }
             }
@@ -262,15 +378,16 @@ footer {
         display: flex;
         align-items: center;
         a {
-            color: var(--Gris-claro);
+            color: $gris-claro;
             margin-left: 20px;
         }
     }
 }
+
 /* =-=-=-=- MEDIA QUERIES =-=-=-=- */
 
 /* ==== TABLET ==== */
-@media (min-width: 401px) and (max-width: 780px) {
+@media (min-width: 649px) and (max-width: 900px) {
     // HEADER --------------------
     header {
         div {
@@ -292,6 +409,7 @@ footer {
         }
     }
     // MAIN -----------------
+// ----------------------------------------------- INDEX -------------------------------------
     main {
         div {
             .imgBig {
@@ -301,7 +419,7 @@ footer {
         }
         // seccion inicial con call to action
         .blockTop {
-            margin: 20px 30px 0 30px;
+            margin: 0px 30px 0 30px;
             .blockTopText {
                 width: 50%;
                 margin-right: 15%;
@@ -363,6 +481,16 @@ footer {
             }
         }
     }
+// ----------------------------------------------- CONTACTO -------------------------------------
+
+// ----------------------------------------------- GALERIA -------------------------------------
+
+// ----------------------------------------------- PORTAFOLIO -------------------------------------
+
+// ----------------------------------------------- QUIENES SOMOS -------------------------------------
+
+
+
 
     // FOOTER -----------------------
 
@@ -394,7 +522,7 @@ footer {
 }
 
 /* ==== MOBILE ==== */
-@media (min-width: 100px) and (max-width: 400px) { 
+@media (min-width: 100px) and (max-width: 650px) { 
     // HEADER ------------
     header {
         ul {
@@ -408,6 +536,7 @@ footer {
         }
     }
     // MAIN ----------------
+// ----------------------------------------------- INDEX -------------------------------------
     main {
         div {
             .imgBig {
@@ -418,7 +547,7 @@ footer {
         .blockTop {
             flex-direction: column-reverse;
             text-align: center;
-            margin: 20px 0 0 0;
+            margin: 0px 0 0 0;
             .blockTopText {
                 width: 100%;
                 margin-right: 0;
@@ -497,6 +626,17 @@ footer {
             }
         }
     }
+
+// ----------------------------------------------- CONTACTO -------------------------------------
+
+// ----------------------------------------------- GALERIA -------------------------------------
+
+// ----------------------------------------------- PORTAFOLIO -------------------------------------
+
+// ----------------------------------------------- QUIENES SOMOS -------------------------------------
+
+
+
     // FOOTER ----------------
     footer {
         flex-direction: column;
