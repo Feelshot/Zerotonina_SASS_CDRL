@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;700;900&display=swap');
 @import "utilities/variables", "utilities/contacto", "utilities/galeria", "utilities/portafolio", "utilities/quienes";
-@import "utilities/contacto";
+@import "utilities/mixin";
+
 // ajustes generales
 *{margin: 0; padding: 0;}
 body {background-color: $gris-medio;color: $gris-claro; background: $gris-claro;}

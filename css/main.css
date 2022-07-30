@@ -26,6 +26,12 @@
         border-radius: 15px;
         font-size: 30px;
         color: #e6e6e6; }
+        .mainContacto .formularioBottomContacto ul li button:hover {
+          width: 250px;
+          height: 70px;
+          border-radius: 20px;
+          transition: 0.3s;
+          cursor: pointer; }
     .mainContacto .formularioBottomContacto input {
       width: 200px;
       height: 30px; }
@@ -217,62 +223,6 @@ main .sectionQuienes {
       font-size: 30px;
       margin-top: 30px; } }
 
-.mainContacto {
-  display: flex;
-  margin: 0px;
-  padding: 60px 60px 80px 60px; }
-  .mainContacto .sectionContacto {
-    width: 50%; }
-    .mainContacto .sectionContacto h1 {
-      margin-bottom: 30px; }
-    .mainContacto .sectionContacto p {
-      font-size: 30px; }
-  .mainContacto .formularioBottomContacto {
-    width: 50%;
-    display: flex;
-    justify-content: center; }
-    .mainContacto .formularioBottomContacto ul li {
-      list-style: none;
-      margin-top: 20px;
-      font-family: 'Anton', sans-serif;
-      font-size: 24px; }
-      .mainContacto .formularioBottomContacto ul li button {
-        width: 240px;
-        height: 60px;
-        margin-top: 30px;
-        background-color: #3885f0;
-        border-radius: 15px;
-        font-size: 30px;
-        color: #e6e6e6; }
-    .mainContacto .formularioBottomContacto input {
-      width: 200px;
-      height: 30px; }
-
-/* =-=-=-=- MEDIA QUERIES =-=-=-=- */
-/* ==== TABLET ==== */
-@media (min-width: 649px) and (max-width: 900px) {
-  .mainContacto .sectionContacto h1 {
-    font-size: 38px;
-    margin-bottom: 20px; }
-  .mainContacto .sectionContacto p {
-    font-size: 24px; } }
-
-/* ==== MOBILE ==== */
-@media (min-width: 100px) and (max-width: 650px) {
-  .mainContacto {
-    flex-direction: column;
-    padding: 40px; }
-    .mainContacto .sectionContacto {
-      width: 100%;
-      text-align: center; }
-      .mainContacto .sectionContacto h1 {
-        margin-bottom: 30px; }
-      .mainContacto .sectionContacto p {
-        font-size: 20px; }
-    .mainContacto .formularioBottomContacto {
-      margin: 0 auto 30px auto;
-      text-align: center; } }
-
 * {
   margin: 0;
   padding: 0; }
@@ -303,7 +253,9 @@ a, button {
   margin-top: 10px; }
 
 header {
-  background-color: #1d1d1b; }
+  background-color: #1d1d1b;
+  display: flex;
+  justify-content: space-around; }
   header nav div ul {
     display: flex;
     list-style: none;
@@ -325,8 +277,8 @@ main {
   color: #fff; }
   main .blockTop {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding-top: 60px; }
     main .blockTop .imgBig {
       width: 350px;
@@ -347,16 +299,18 @@ main {
         main .blockTop .blockTopText button h2 {
           color: #e6e6e6;
           font-size: 30px; }
-      main .blockTop .blockTopText button:hover {
-        width: 250px;
-        height: 70px;
-        border-radius: 20px;
-        transition: 0.3s;
-        cursor: pointer; }
+        main .blockTop .blockTopText button:hover {
+          width: 250px;
+          height: 70px;
+          border-radius: 20px;
+          transition: 0.3s;
+          cursor: pointer; }
   main .blockTips {
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 30px; }
     main .blockTips .icons {
       width: 80px;
@@ -376,9 +330,9 @@ main {
         margin-bottom: 60px; }
   main .blockImg {
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-around;
+    flex-direction: row-reverse;
     margin-bottom: 50px; }
     main .blockImg .imagenRefuerzo {
       width: 350px;
@@ -392,8 +346,8 @@ main {
         font-size: 26px; }
   main .blockForm {
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
     padding-bottom: 60px; }
     main .blockForm div {
       width: 600px; }
@@ -415,12 +369,12 @@ main {
         border-radius: 15px;
         font-size: 30px;
         color: #e6e6e6; }
-      main .blockForm .formularioBottom ul li button:hover {
-        width: 250px;
-        height: 70px;
-        border-radius: 20px;
-        transition: 0.3s;
-        cursor: pointer; }
+        main .blockForm .formularioBottom ul li button:hover {
+          width: 250px;
+          height: 70px;
+          border-radius: 20px;
+          transition: 0.3s;
+          cursor: pointer; }
     main .blockForm .formularioBottom input {
       width: 200px;
       height: 30px; }
