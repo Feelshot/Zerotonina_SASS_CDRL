@@ -13,8 +13,7 @@ a, button {font-family: 'Anton', sans-serif;font-size: 15px;}
 // ----- HEADER -------------
 header {
     background-color: $gris-fuerte;
-    display: flex;
-    justify-content: space-around;
+    @include flex-around;
     nav {
         div {
             ul {
@@ -29,9 +28,7 @@ header {
                         color: $gris-claro;
                         width: 100px;
                         height: 60px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        @include flex-center;
                     }
                 }
             }
@@ -46,9 +43,7 @@ main {
     background-color: $gris-medio;
     color: #fff;
     .blockTop {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         padding-top: 60px;
         .imgBig {
             width: 350px;
@@ -73,23 +68,22 @@ main {
                     color: $gris-claro;
                     font-size: 30px;
                 }
-            }
-        // ANIMACION BOTON 
-            button:hover {
-                width: 250px;
-                height: 70px;
-                border-radius: 20px;
-                transition: 0.3s;
-                cursor: pointer;
+                 // ANIMACION BOTON 
+                &:hover {
+                   width: 250px;
+                    height: 70px;
+                    border-radius: 20px;
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
             }
         }
     }
         // Bloque con 3 recomendaciones 
 
     .blockTips {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+            @include flex-around;
+            @include flex-center;
             padding-top: 30px;
 
             .icons {
@@ -119,9 +113,9 @@ main {
 
     .blockImg {
             display: flex;
-            flex-direction: row-reverse;
             align-items: center;
             justify-content: space-around;
+            flex-direction: row-reverse;
             margin-bottom: 50px;
             .imagenRefuerzo {
                 width: 350px;
@@ -143,9 +137,8 @@ main {
         // Formulario 
 
         .blockForm {
-            display: flex;
+            @include flex-around;
             align-items: center;
-            justify-content: space-around;
             padding-bottom: 60px;
 
             div {
@@ -175,16 +168,17 @@ main {
                             border-radius: 15px;
                             font-size: 30px;
                             color: $gris-claro; 
+                                // animacion boton
+                                &:hover {
+                                    width: 250px;
+                                    height: 70px;
+                                    border-radius: 20px;
+                                    transition: 0.3s;
+                                    cursor: pointer;
+                                }
                         }
 
-                        // animacion boton
-                        button:hover {
-                            width: 250px;
-                            height: 70px;
-                            border-radius: 20px;
-                            transition: 0.3s;
-                            cursor: pointer;
-                        }
+
                     }
                 }
                 input {

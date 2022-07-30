@@ -1,0 +1,10 @@
+@mixin flex-around { // mixin para aplicar flex y space-around
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin flex-center { //mixin para centrar contenido
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

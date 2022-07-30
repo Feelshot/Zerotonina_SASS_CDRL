@@ -303,9 +303,7 @@ a, button {
   margin-top: 10px; }
 
 header {
-  background-color: #1d1d1b;
-  display: flex;
-  justify-content: space-around; }
+  background-color: #1d1d1b; }
   header nav div ul {
     display: flex;
     list-style: none;

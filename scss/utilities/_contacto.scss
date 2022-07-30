@@ -24,7 +24,15 @@
                     background-color: $call-to-action;
                     border-radius: 15px;
                     font-size: 30px;
-                    color: $gris-claro; 
+                    color: $gris-claro;
+                    // ANIMACION BOTON 
+                    &:hover {
+                        width: 250px;
+                        height: 70px;
+                        border-radius: 20px;
+                        transition: 0.3s;
+                        cursor: pointer;
+                    } 
                 }
             }
         }
