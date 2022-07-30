@@ -1,0 +1,75 @@
+.mainContacto {
+    display: flex;
+    margin: 60px;
+    .sectionContacto {
+        width: 50%;
+        h1 {    margin-bottom: 30px;}
+        p {    font-size: 30px;}
+    }
+    .formularioBottomContacto {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        ul {
+            li {
+                list-style: none;
+                margin-top: 20px;
+                font-family: 'Anton', sans-serif;
+                font-size: 24px;
+                button {
+                    width: 240px;
+                    height: 60px;
+                    margin-top: 30px;
+                    background-color: $call-to-action;
+                    border-radius: 15px;
+                    font-size: 30px;
+                    color: $gris-claro; 
+                }
+            }
+        }
+        input {
+            width: 200px;
+            height: 30px;
+        }
+    }
+}
+/* =-=-=-=- MEDIA QUERIES =-=-=-=- */
+
+/* ==== TABLET ==== */
+@media (min-width: 649px) and (max-width: 900px) {
+    .mainContacto {
+        .sectionContacto {
+            h1 {
+                font-size: 38px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+
+}
+
+/* ==== MOBILE ==== */
+@media (min-width: 100px) and (max-width: 650px) { 
+    .mainContacto {
+        flex-direction: column;
+        margin: 40px;
+        .sectionContacto {
+            width: 100%;
+            text-align: center;
+            h1 {
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+        .formularioBottomContacto {
+            margin: 0 auto 30px auto;
+            text-align: center;
+        }
+    }
+
+}

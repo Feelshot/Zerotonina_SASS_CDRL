@@ -1,0 +1,81 @@
+main {
+    background-color: $gris-medio;
+    .galeria {
+        width: 650px;
+        height: 650px;
+        margin: 0 auto 0 auto;
+        .carousel {
+            background-color: var(--Gris-medio);
+            .carousel-inner {
+                .carousel-item {
+                        .imagenChica {
+                            width: auto;
+                            height: 650px;
+                        }
+                        .imagenGrande {
+                            width: auto;
+                            height: 650px;
+                        }
+                }
+            }
+
+        }
+    }
+}
+
+/* =-=-=-=- MEDIA QUERIES =-=-=-=- */
+
+/* ==== TABLET ==== */
+@media (min-width: 649px) and (max-width: 900px) {
+    main {
+        background-color: $gris-medio;
+        .galeria {
+            height: 550px;
+            width: 550px;
+            margin: 0 auto 0 auto;
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .imagenChica {
+                            height: 550px;
+                        }
+                        .imagenGrande {
+                            height: 550px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* ==== MOBILE ==== */
+@media (min-width: 100px) and (max-width: 650px) { 
+    main {
+        background-color: $gris-medio;
+        .galeria {
+            width: 550px;
+            height: 550px;
+            margin: 0 auto 0 auto;
+            .carousel {
+                .carousel-inner { 
+                    .carousel-item {
+                        .imagenChica {
+                            width: auto;
+                            height: 550px;
+                            place-self: center;
+                        }
+                        .imagenGrande {
+                            width: auto;
+                            height: 550px;
+                            place-self: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
