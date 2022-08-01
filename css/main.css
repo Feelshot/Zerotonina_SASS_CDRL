@@ -163,8 +163,8 @@ main .formularioBottomPortafolio {
 @media (min-width: 100px) and (max-width: 650px) {
   main .video {
     width: 90%;
-    height: 220px;
-    margin: 20px auto 60px auto; }
+    height: 340px;
+    margin: 0px auto 60px auto; }
   main .sectionPortafolio {
     display: flex;
     flex-direction: column;
