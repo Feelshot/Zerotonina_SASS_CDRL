@@ -20,16 +20,16 @@ header {
             ul {
                 display: flex;
                 list-style: none;
-                color: $gris-claro;
                 li {
-                    color: $gris-claro;
                     a {
                         text-decoration: none;
                         margin-left: 40px;
-                        color: $gris-claro;
                         width: 100px;
                         height: 60px;
                         @include flex-center;
+                    }
+                    .nav-link {
+                        color: $gris-claro;
                     }
                 }
             }
