@@ -11,7 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/ferneynava/Planeador-semanal">
+  <a href="https://github.com/Feelshot/Zerotonina_SASS_CDRL/">
     <img src="img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -62,7 +62,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![](img/screenshot.jpg)
 
 Maquetación de una pagina web para una banda de rock con CSS Grid, Flexbox, Boostrap y SASS. 
 
