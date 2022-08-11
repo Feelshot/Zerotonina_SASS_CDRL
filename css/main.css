@@ -307,10 +307,8 @@ main {
   main .blockTips {
     display: flex;
     justify-content: space-around;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px; }
+    padding-top: 30px;
+    margin-left: 20px; }
     main .blockTips .icons {
       width: 80px;
       margin: 20px 0px 20px 0px; }
