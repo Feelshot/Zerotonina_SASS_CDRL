@@ -62,7 +62,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![](img/screenshot.jpg)
+![](img/screenshot.png)
 
 Maquetación de una pagina web para una banda de rock con CSS Grid, Flexbox, Boostrap y SASS. 
 
