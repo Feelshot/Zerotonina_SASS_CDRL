@@ -4,8 +4,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 
 <!-- PROJECT LOGO -->
@@ -165,19 +164,3 @@ Project Link: [https://github.com/Feelshot/Zerotonina_SASS_CDRL/](https://github
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/ferneynava/Planeador-semanal.svg?style=for-the-badge
-[contributors-url]: https://github.com/ferneynava/Planeador-semanal/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ferneynava/Planeador-semanal.svg?style=for-the-badge
-[forks-url]: https://github.com/ferneynava/Planeador-semanal/network/members
-[stars-shield]: https://img.shields.io/github/stars/ferneynava/Planeador-semanal.svg?style=for-the-badge
-[stars-url]: https://github.com/ferneynava/Planeador-semanal/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ferneynava/Planeador-semanal.svg?style=for-the-badge
-[issues-url]: https://github.com/ferneynava/Planeador-semanal/issues
-[license-shield]: https://img.shields.io/github/license/ferneynava/Planeador-semanal.svg?style=for-the-badge
-[license-url]: https://github.com/ferneynava/Planeador-semanal/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/ferney-alexander-nava-trujillo-0478a8118/
-[product-screenshot]: ./images/Captura%20de%20pantalla%202022-07-16%20201940.png
-[HTML]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
-[CSS]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
